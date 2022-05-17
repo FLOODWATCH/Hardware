@@ -176,7 +176,7 @@ void loop() {
 //      int httpCode = http.POST("{\"wlLevel\":\"Level 1\",\"wlInfo\":\"GREEN WARNING\",\"wlTime\":DatenTime,\"wlMonth\":currentMonthName,\"wlColor\":\"Green\"}");
       getHttpCode(httpCode);
       Serial.println("wait for 10 minutes..... sapagkat d naman ganoon kabilis ang pag angat ng tubig hehe");
-      delay(600000); //the delay is 300 sec or 5 minutes, and that is according to what i have research that flash floods can rise one foor in just 5 minutes but we can increase that time delay definitely && and include natin to sa paper
+      delay(15000); //the delay is 300 sec or 5 minutes, and that is according to what i have research that flash floods can rise one foor in just 5 minutes but we can increase that time delay definitely && and include natin to sa paper
       //for 10 minutes just put 600000
     }else if(distance > 45 && distance <= 67){ //LEVEL 2 //greater than 2 meters and less than or equal to 3 meters
       DynamicJsonDocument doc(1024);
@@ -198,7 +198,7 @@ void loop() {
 //      int httpCode = http.POST("{\"wlLevel\":\"Level 2\",\"wlInfo\":\"YELLOW WARNING\",\"wlTime\":DatenTime,\"wlMonth\":currentMonthName,\"wlColor\":\"Yellow\"}");
       getHttpCode(httpCode);
       Serial.println("wait for 10 minutes..... sapagkat d naman ganoon kabilis ang pag angat ng tubig hehe");
-      delay(600000);
+      delay(15000);
    
     }else if(distance > 22 && distance <= 45){ //LEVEL 3 //greater than 1 meter and less than or equal to 2 meters
 
@@ -221,7 +221,7 @@ void loop() {
 //      int httpCode = http.POST("{\"wlLevel\":\"Level 3\",\"wlInfo\":\"ORANGE WARNING\",\"wlTime\":DatenTime,\"wlMonth\":currentMonthName,\"wlColor\":\"Orange\"}");
       getHttpCode(httpCode);
       Serial.println("wait for 10 minutes..... sapagkat d naman ganoon kabilis ang pag angat ng tubig hehe");
-      delay(600000);
+      delay(15000);
     
     }else if(distance > 0 && distance <= 22){ //LEVEL 4 //less than or equal to 1 meter
       DynamicJsonDocument doc(1024);
@@ -243,7 +243,7 @@ void loop() {
 //      int httpCode = http.POST("{\"wlLevel\":\"Level 4\",\"wlInfo\":\"RED WARNING\",\"wlTime\":DatenTime,\"wlMonth\":currentMonthName,\"wlColor\":\"Red\"}");
       getHttpCode(httpCode);
       Serial.println("wait for 10 minutes..... sapagkat d naman ganoon kabilis ang pag angat ng tubig hehe");
-      delay(600000);
+      delay(15000);
     
     }
     //*******************************************************************************
